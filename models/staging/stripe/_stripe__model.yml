@@ -1,0 +1,24 @@
+models:
+  - name: stg_stripe__payments
+    description: This is stage
+    columns:
+      - name: payment_id
+        data_type: int64
+        tests:
+          - not_null
+        quote: true
+      - name: order_id
+        data_type: int64
+        quote: true
+      - name: payment_method
+        data_type: string
+        quote: true
+      - name: status
+        data_type: string
+        quote: true
+      - name: amount
+        data_type: float64
+        quote: true
+      - name: created_at
+        data_type: date
+        quote: true
